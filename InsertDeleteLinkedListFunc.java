@@ -97,5 +97,7 @@ public class InsertDeleteLinkedListFunc {
         list.deleteFromEnd();
         System.out.println("\nAfter deleting from end:");
         list.display();
+
+        sc.close();
     }
 }
