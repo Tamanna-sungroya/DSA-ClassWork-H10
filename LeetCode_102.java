@@ -3,6 +3,7 @@ import java.util.*;
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
+
         if (root == null) return result;
 
         Queue<TreeNode> queue = new java.util.LinkedList<>();
@@ -19,8 +20,10 @@ class Solution {
                 if (current.left != null) queue.offer(current.left);
                 if (current.right != null) queue.offer(current.right);
             }
+            
             result.add(currentLevel); 
         }
+
         return result;
     }
 }
